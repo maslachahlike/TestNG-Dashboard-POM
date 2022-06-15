@@ -8,16 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage {
 
-	//2
 	protected WebDriver driver;
 	
-	/*tanpa page factory
+	/*
 	private By email = By.xpath("//input[@placeholder='Email']");
 	private By password = By.xpath("//input[@placeholder='Password']");
 	private By btnSignIn = By.xpath("//button[@type='submit']");
 	*/
 	
-	//kalau tanpa page factory
+	/*
+	 * tanpa page factory
+	 */
+	
 	@FindBy(xpath = "//input[@placeholder='Email']")
 	private WebElement email;
 	
@@ -62,7 +64,10 @@ public class SignInPage {
 		driver.findElement(btnSignIn).click();
 		*/
 		
-		//tanpa page factory
+		/*
+		 * tanpa page factory
+		 */
+		
 		email.clear();
 		email.sendKeys(username);
 		password.clear();
@@ -96,6 +101,7 @@ public class SignInPage {
 		forgotPassword.click();
 		ForgotPasswordPage forgotPasswordPage = PageFactory.initElements(driver, ForgotPasswordPage.class);
 		return forgotPasswordPage;
+	
 	}
 	
 	

@@ -20,7 +20,6 @@ public class Dashboard {
 	
 	
 	public Dashboard(WebDriver driver)  {
-		// TODO Auto-generated constructor stub
 			
 		this.driver = driver;
 		

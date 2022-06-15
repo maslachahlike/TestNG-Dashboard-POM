@@ -14,14 +14,12 @@ public class HomePage {
 	private By languageSetting = By.xpath("//a[@class='dropdown-toggle']");
 	*/
 	
-	//tanpa page factory
+	/*
+	 * tanpa page factory
+	 */
+	
 	@FindBy(xpath = "//a[@class='page-scroll']")
 	private WebElement signIn;
-	
-	
-	//@FindBy(xpath = "//a[@class='dropdown-toggle']")
-	//private WebElement languageSetting;
-	
 	
 
 	@FindBy(xpath = "//a[normalize-space()='Logout']")
@@ -44,7 +42,10 @@ public class HomePage {
 	public SignInPage clickSignIn() {
 		//driver.findElement(signIn).click();
 		
-		//tanpa page factory
+		/*
+		 * tanpa page factory
+		 */
+		
 		signIn.click();
 		
 		SignInPage signInPage =  PageFactory.initElements(driver, SignInPage.class);

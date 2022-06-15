@@ -14,7 +14,7 @@ public class ForgotPasswordPage {
 	
 	
 	public ForgotPasswordPage(WebDriver driver) {
-		
+
 		this.driver = driver;
 		
 	}
