@@ -16,8 +16,7 @@ public class TestLoginUser {
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(System.getProperty("url"));
-		driver.manage().window().maximize();
-		
+		driver.manage().window().maximize();	
 	}
 	
 	
